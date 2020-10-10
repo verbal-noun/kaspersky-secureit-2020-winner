@@ -56,6 +56,8 @@ flutter:
     - assets/video.png
     - assets/password.png
     - assets/bullying.png
+    - assets/girl.png
+    - assets/boy.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

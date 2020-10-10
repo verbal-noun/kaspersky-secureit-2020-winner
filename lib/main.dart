@@ -31,7 +31,7 @@ class HomeState extends State<Home> {
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 23,
                               fontWeight: FontWeight.bold)),
                     ),
                     SizedBox(
@@ -42,19 +42,16 @@ class HomeState extends State<Home> {
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
                               color: Color(0xffa29aac),
-                              fontSize: 14,
+                              fontSize: 16,
                               fontWeight: FontWeight.w600)),
                     ),
                   ],
                 ),
-                IconButton(
-                  alignment: Alignment.topCenter,
-                  icon: Image.asset(
-                    "assets/notification.png",
-                    width: 40,
-                  ),
-                  onPressed: () {},
-                )
+                Image(
+                  image: AssetImage('assets/boy.png'),
+                  height: 100,
+
+                ),
               ],
             ),
           ),
