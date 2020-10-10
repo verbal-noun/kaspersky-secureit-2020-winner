@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -52,7 +51,9 @@ class Dashboard extends StatelessWidget {
           crossAxisSpacing: 18,
           mainAxisSpacing: 18,
           children: myList.map((data) {
-            return Container(
+            return InkWell(
+              onTap: null,
+                child: Container(
               decoration: BoxDecoration(
                   color: Color(color), borderRadius: BorderRadius.circular(10)),
               child: Column(
@@ -97,7 +98,7 @@ class Dashboard extends StatelessWidget {
                   ),
                 ],
               ),
-            );
+            ));
           }).toList()),
     );
   }
