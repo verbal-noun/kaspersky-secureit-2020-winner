@@ -59,6 +59,45 @@ class RoomPage extends StatelessWidget {
                           ]),
                       Image(
                         image: AssetImage('assets/fingerprint.png'),
+                        height: 102,
+
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 1.0)),
+                    ],
+                  ),
+                ),
+              ),
+              _buildTile(
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 22.0, right: 0, top: 24, bottom: 24),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Material(
+                                color: Color(0xff392850),
+                                shape: CircleBorder(),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Icon(Icons.play_arrow,
+                                      color: Colors.white, size: 30.0),
+                                )),
+                            Padding(padding: EdgeInsets.only(bottom: 20.0)),
+                            Text('Social Media',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: CARD_TITLE_SIZE)),
+                            Text('Navigate the online world',
+                                style: TextStyle(color: Colors.white54)),
+                          ]),
+                      Image(
+                        image: AssetImage('assets/social-media.png'),
                         height: 110,
                         width: 110,
 
@@ -89,16 +128,96 @@ class RoomPage extends StatelessWidget {
                                       color: Colors.white, size: 30.0),
                                 )),
                             Padding(padding: EdgeInsets.only(bottom: 20.0)),
-                            Text('Social media',
+                            Text('Online Scams',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w700,
                                     fontSize: CARD_TITLE_SIZE)),
-                            Text('Navigate the online world',
+                            Text('Avoiding the online threats',
                                 style: TextStyle(color: Colors.white54)),
                           ]),
                       Image(
-                        image: AssetImage('assets/social-media.png'),
+                        image: AssetImage('assets/video.png'),
+                        height: 110,
+                        width: 110,
+
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 1.0)),
+                    ],
+                  ),
+                ),
+              ),
+              _buildTile(
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 22.0, right: 0, top: 24, bottom: 24),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Material(
+                                color: Color(0xff392850),
+                                shape: CircleBorder(),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Icon(Icons.play_arrow,
+                                      color: Colors.white, size: 30.0),
+                                )),
+                            Padding(padding: EdgeInsets.only(bottom: 20.0)),
+                            Text('Passwords',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: CARD_TITLE_SIZE)),
+                            Text('Avoiding the online threats',
+                                style: TextStyle(color: Colors.white54)),
+                          ]),
+                      Image(
+                        image: AssetImage('assets/password.png'),
+                        height: 110,
+                        width: 110,
+
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 1.0)),
+                    ],
+                  ),
+                ),
+              ),
+              _buildTile(
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 22.0, right: 0, top: 24, bottom: 24),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Material(
+                                color: Color(0xff392850),
+                                shape: CircleBorder(),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Icon(Icons.play_arrow,
+                                      color: Colors.white, size: 30.0),
+                                )),
+                            Padding(padding: EdgeInsets.only(bottom: 20.0)),
+                            Text('Cyberbullying',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: CARD_TITLE_SIZE)),
+                            Text("Don't be one mister",
+                                style: TextStyle(color: Colors.white54)),
+                          ]),
+                      Image(
+                        image: AssetImage('assets/bullying.png'),
                         height: 110,
                         width: 110,
 
@@ -110,6 +229,9 @@ class RoomPage extends StatelessWidget {
               )
             ],
             staggeredTiles: [
+              StaggeredTile.extent(1, 180.0),
+              StaggeredTile.extent(1, 180.0),
+              StaggeredTile.extent(1, 180.0),
               StaggeredTile.extent(1, 180.0),
               StaggeredTile.extent(1, 180.0),
             ],

@@ -51,7 +51,7 @@ class HomeState extends State<Home> {
                   alignment: Alignment.topCenter,
                   icon: Image.asset(
                     "assets/notification.png",
-                    width: 24,
+                    width: 40,
                   ),
                   onPressed: () {},
                 )

@@ -4,7 +4,7 @@ import 'package:secureit_app/room_page.dart';
 
 class Dashboard extends StatelessWidget {
   Items item1 = new Items(
-      title: "Calendar",
+      title: "Timetable",
       subtitle: "October, Saturday",
       event: "3 Events",
       img: "assets/calendar.png");
@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
   Items item4 = new Items(
     title: "Activity",
     subtitle: "Rose favirited your Post",
-    event: "",
+    event: "3 Active Events",
     img: "assets/festival.png",
   );
   Items item5 = new Items(
@@ -42,7 +42,7 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Items> myList = [item1, item2, item3, item4, item5, item6];
+    List<Items> myList = [item1, item5, item2, item4, item3, item6];
     var color = 0xff453658;
     return Flexible(
       child: GridView.count(
