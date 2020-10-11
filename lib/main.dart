@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dashboard.dart';
-void main() => runApp(MaterialApp(home: Home()));
+void main() => runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Home()));
 
 class Home extends StatefulWidget {
   @override
