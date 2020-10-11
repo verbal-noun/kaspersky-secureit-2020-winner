@@ -4,6 +4,11 @@ import 'package:secureit_app/privacy_screen_1.dart';
 import 'room_page.dart';
 
 class PrivacyRoom extends StatelessWidget {
+  String privacyText = "If you use the internet, a lot of information about you"
+      " is publicly available for anyone to see. \n\nHowever, how do you protect "
+      "yourself against fraud and fake emails? How do you make sure your "
+      "information is not in the wrong hands? \n\nLearn more "
+      "about how to defend yourself on the internet in this room!";
 
   @override
   Widget build(BuildContext context) {
@@ -59,12 +64,13 @@ class PrivacyRoom extends StatelessWidget {
                   border: Border.all(color: Color(0xff453658)),
                   borderRadius: BorderRadius.circular(12.0),
                 ),
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.fromLTRB(10, 2, 20, 0),
                 child: Text(
-                  'Sample text',
+                  privacyText,
                   style: GoogleFonts.openSans(
                       textStyle: TextStyle(
                     color: Colors.white,
+                    fontSize: 16,
                   )),
                 ),
               ),
@@ -76,20 +82,18 @@ class PrivacyRoom extends StatelessWidget {
                 color: Color(0xffebae34),
                 textColor: Colors.white,
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => PrivacyScreen1()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => PrivacyScreen1()));
                 },
                 child: Text(
-                    'Play Room',
-                    style: GoogleFonts.openSans(
+                  'Play Room',
+                  style: GoogleFonts.openSans(
                       textStyle: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16
-                      )
-                    ),
-                  ),
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16)),
                 ),
+              ),
             ],
           ),
         ));
