@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:secureit_app/priv_correct_1.dart';
 
 class PrivacyScreen2 extends StatelessWidget {
   String scenario = "However you see the website is asking access to sensitive information"
@@ -53,7 +54,7 @@ class PrivacyScreen2 extends StatelessWidget {
                 height: 350,
                 decoration: new BoxDecoration(
                   image: new DecorationImage(
-                    image: new AssetImage("assets/priv-1.jpg"),
+                    image: new AssetImage("assets/priv-2.png"),
                   ),
                 )),
             Padding(
@@ -68,7 +69,7 @@ class PrivacyScreen2 extends StatelessWidget {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (_) => PrivacyScreen2()));
+                        .push(MaterialPageRoute(builder: (_) => PrivacyCorrect1()));
                   },
                   child: Text(
                     'Accept',

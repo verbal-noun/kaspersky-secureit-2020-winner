@@ -4,7 +4,6 @@ import 'package:secureit_app/privacy_screen_1.dart';
 import 'room_page.dart';
 
 class PrivacyRoom extends StatelessWidget {
-  static const double CARD_TITLE_SIZE = 23.0;
 
   @override
   Widget build(BuildContext context) {
