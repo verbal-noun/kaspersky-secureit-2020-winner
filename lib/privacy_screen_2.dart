@@ -70,7 +70,7 @@ class PrivacyScreen2 extends StatelessWidget {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (_) => PrivacyCorrect1()));
+                        .push(MaterialPageRoute(builder: (_) => PrivacyWrong1()));
                   },
                   child: Text(
                     'Accept',
@@ -89,7 +89,7 @@ class PrivacyScreen2 extends StatelessWidget {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (_) => PrivacyWrong1()));
+                        .push(MaterialPageRoute(builder: (_) => PrivacyCorrect1()));
                   },
                   child: Text(
                     'Reject',
