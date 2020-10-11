@@ -15,7 +15,7 @@ class PrivacyCorrect1 extends StatelessWidget {
             child: AppBar(
               elevation: 2.0,
               backgroundColor: Color(0xff392850),
-              title: Text('Exit Room',
+              title: Text('Retry Room',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w700,
