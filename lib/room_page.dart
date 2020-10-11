@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:secureit_app/privacy_room.dart';
 
 class RoomPage extends StatelessWidget {
   static const double CARD_TITLE_SIZE = 23.0;
@@ -19,9 +20,7 @@ class RoomPage extends StatelessWidget {
                       fontSize: 30.0)),
             )),
         body: Container(
-          decoration: BoxDecoration(
-            color: Color(0xff392850)
-          ),
+          decoration: BoxDecoration(color: Color(0xff392850)),
           child: StaggeredGridView.count(
             crossAxisCount: 1,
             crossAxisSpacing: 12.0,
@@ -60,12 +59,13 @@ class RoomPage extends StatelessWidget {
                       Image(
                         image: AssetImage('assets/fingerprint.png'),
                         height: 102,
-
                       ),
                       Padding(padding: EdgeInsets.only(left: 1.0)),
                     ],
                   ),
                 ),
+                onTap: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => PrivacyRoom())),
               ),
               _buildTile(
                 Padding(
@@ -100,7 +100,6 @@ class RoomPage extends StatelessWidget {
                         image: AssetImage('assets/social-media.png'),
                         height: 110,
                         width: 110,
-
                       ),
                       Padding(padding: EdgeInsets.only(left: 1.0)),
                     ],
@@ -140,7 +139,6 @@ class RoomPage extends StatelessWidget {
                         image: AssetImage('assets/video.png'),
                         height: 110,
                         width: 110,
-
                       ),
                       Padding(padding: EdgeInsets.only(left: 1.0)),
                     ],
@@ -180,7 +178,6 @@ class RoomPage extends StatelessWidget {
                         image: AssetImage('assets/password.png'),
                         height: 110,
                         width: 110,
-
                       ),
                       Padding(padding: EdgeInsets.only(left: 1.0)),
                     ],
@@ -220,7 +217,6 @@ class RoomPage extends StatelessWidget {
                         image: AssetImage('assets/bullying.png'),
                         height: 110,
                         width: 110,
-
                       ),
                       Padding(padding: EdgeInsets.only(left: 1.0)),
                     ],
@@ -246,12 +242,12 @@ class RoomPage extends StatelessWidget {
         color: Color(0xff453658),
         shadowColor: Colors.blueGrey,
         child: InkWell(
-            // Do onTap() if it isn't null, otherwise do print()
+          // Do onTap() if it isn't null, otherwise do print()
             onTap: onTap != null
                 ? () => onTap()
                 : () {
-                    print('Not set yet');
-                  },
+              print('Not set yet');
+            },
             child: child));
   }
 }
