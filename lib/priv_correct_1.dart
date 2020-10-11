@@ -5,10 +5,6 @@ import 'package:secureit_app/privacy_screen_2.dart';
 import 'package:secureit_app/room_page.dart';
 
 class PrivacyCorrect1 extends StatelessWidget {
-  String scenario =
-      "You have been scrolling through your social media feed and "
-      "suddenly you see a friend sharing their stats on which Marvel superhero they are. \n"
-      "\nYou feel intrigued. So you click on the post!";
 
   @override
   Widget build(BuildContext context) {

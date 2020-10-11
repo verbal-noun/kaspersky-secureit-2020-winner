@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:secureit_app/priv_correct_1.dart';
+import 'package:secureit_app/priv_wrong_1.dart';
 
 class PrivacyScreen2 extends StatelessWidget {
   String scenario = "However you see the website is asking access to sensitive information"
@@ -88,7 +89,7 @@ class PrivacyScreen2 extends StatelessWidget {
                   textColor: Colors.white,
                   onPressed: () {
                     Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (_) => PrivacyScreen2()));
+                        .push(MaterialPageRoute(builder: (_) => PrivacyWrong1()));
                   },
                   child: Text(
                     'Reject',
