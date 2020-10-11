@@ -69,20 +69,24 @@ class PrivacyRoom extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 10.0),
+                padding: EdgeInsets.only(top: 12.0),
               ),
               RaisedButton(
-                padding: const EdgeInsets.all(0.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.orangeAccent
-                  ),
-                  child: Text(
+                padding: const EdgeInsets.all(8.0),
+                color: Color(0xffebae34),
+                textColor: Colors.white,
+                onPressed: () {},
+                child: Text(
                     'Play Room',
-                    style: GoogleFonts.openSans(),
+                    style: GoogleFonts.openSans(
+                      textStyle: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16
+                      )
+                    ),
                   ),
                 ),
-              )
             ],
           ),
         ));
