@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:secureit_app/privacy_screen_1.dart';
 import 'room_page.dart';
 
 class PrivacyRoom extends StatelessWidget {
@@ -75,7 +76,10 @@ class PrivacyRoom extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 color: Color(0xffebae34),
                 textColor: Colors.white,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => PrivacyScreen1()));
+                },
                 child: Text(
                     'Play Room',
                     style: GoogleFonts.openSans(
