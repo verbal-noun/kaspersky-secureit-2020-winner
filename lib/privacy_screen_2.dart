@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PrivacyScreen2 extends StatelessWidget {
-  String scenario = "You have been scrolling through your social media feed and "
-      "suddenly you see a friend sharing their stats on which Marvel superhero they are. \n"
-      "\nYou feel intrigued. So you click on the post!";
+  String scenario = "However you see the website is asking access to sensitive information"
+      "Things like your photos, chats etc. which are very private to you.\n"
+      "\nWhat do you do in this situation?";
 
 
   @override
@@ -59,25 +59,50 @@ class PrivacyScreen2 extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(top: 30.0),
             ),
-            RaisedButton(
-              padding: const EdgeInsets.all(8.0),
-              color: Color(0xffebae34),
-              textColor: Colors.white,
-              onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => PrivacyScreen2()));
-              },
-              child: Text(
-                'Next',
-                style: GoogleFonts.openSans(
-                    textStyle: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16
-                    )
+            Row (
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                RaisedButton(
+                  padding: const EdgeInsets.all(8.0),
+                  color: Colors.green,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) => PrivacyScreen2()));
+                  },
+                  child: Text(
+                    'Accept',
+                    style: GoogleFonts.openSans(
+                        textStyle: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16
+                        )
+                    ),
+                  ),
                 ),
-              ),
+                RaisedButton(
+                  padding: const EdgeInsets.all(8.0),
+                  color: Colors.redAccent,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) => PrivacyScreen2()));
+                  },
+                  child: Text(
+                    'Reject',
+                    style: GoogleFonts.openSans(
+                        textStyle: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16
+                        )
+                    ),
+                  ),
+                ),
+              ],
             ),
+
           ],
         ),
       ),
