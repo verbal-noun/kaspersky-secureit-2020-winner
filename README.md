@@ -28,6 +28,8 @@ of rooms easily in the future.
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | <img src="img/secureIt-dashboard.png" alt="Prespa Banner" width="250"> | <img src="img/secureit-rooms.png" alt="Prespa Banner" width="250"> |
 
+
+
 ### Privacy themed game demo
 
 The rooms are designed to simulate the real-world as much as possible to ensure children can easily relate the
