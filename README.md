@@ -6,6 +6,8 @@ An app to make children more cyber aware. We have created dedicated game rooms f
 
 In our apps, we have game rooms which are dedicated interactive games on various concepts such as privacy, navigating social media, online scams, cyberbullying and much more. There rooms consist of many real world scenarios which can potentially bring harm to children. The students would need to make decisions during these situations and we would reward or teach them the right steps depending on what actions they choose.
 
+**Our app was the winner of Kaspersky Secur'IT 2020 Cup's Regional round, competiting against 23 other universities.** 
+
 ## How to run
 
 **Tech Stack:** Flutter
